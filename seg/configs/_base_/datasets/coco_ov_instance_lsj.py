@@ -6,6 +6,9 @@ from mmengine.dataset import DefaultSampler
 
 from seg.datasets.coco_ins_ov import CocoOVDataset
 from seg.datasets.pipeliens.loading import FilterAnnotationsHB
+from seg.evaluation.ins_cls_iou_metric import InsClsIoUMetric
+
+from ext.class_names.coco_4817_ids import COCO4817_BASE_IDS, COCO4817_NOVEL_IDS
 
 data_root = 'data/coco/'
 backend_args = None
@@ -61,8 +64,41 @@ train_dataloader = dict(
         backend_args=backend_args)
 )
 
-val_dataloader = None
+
+test_pipeline = [
+    dict(type=LoadImageFromFile, backend_args=backend_args),
+    dict(type=Resize, scale=(1024, 1024), keep_ratio=True),
+    dict(type=LoadAnnotations, with_bbox=True, with_mask=True),
+    dict(
+        type=PackDetInputs,
+        meta_keys=('img_id', 'img_path', 'ori_shape', 'img_shape', 'scale_factor')
+    )
+]
+val_dataloader = dict(
+    batch_size=1,
+    num_workers=2,
+    persistent_workers=True,
+    drop_last=False,
+    sampler=dict(type=DefaultSampler, shuffle=False),
+    dataset=dict(
+        type=dataset_type,
+        data_root=data_root,
+        ann_file='annotations/instances_val2017.json',
+        data_prefix=dict(img='val2017/'),
+        filter_cfg=dict(sub_split='48_17'),
+        test_mode=True,
+        return_classes=True,
+        pipeline=test_pipeline,
+        backend_args=backend_args)
+)
 test_dataloader = val_dataloader
 
-val_evaluator = None
+val_evaluator = [
+    dict(
+        type=InsClsIoUMetric,
+        prefix='coco_ins',
+        base_classes=COCO4817_BASE_IDS,
+        novel_classes=COCO4817_NOVEL_IDS,
+    ),
+]
 test_evaluator = val_evaluator

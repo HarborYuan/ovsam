@@ -55,7 +55,7 @@ model = dict(
         fix=True,
         init_cfg=dict(
             type='Pretrained',
-            checkpoint='./models/sam2clip_vith_rn50.pth',
+            checkpoint='./models/sam2clip_vith_rn50x16.pth',
             prefix='neck_student',
         )
     ),
