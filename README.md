@@ -1,1 +1,1 @@
-# ovsam
+# Open-Vocabulary SAM
