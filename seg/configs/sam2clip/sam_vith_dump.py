@@ -2,7 +2,7 @@ from mmdet.models import BatchFixedSizePad, DetDataPreprocessor
 from mmengine.config import read_base
 
 from seg.models.backbones import SAMBackbone
-from seg.models.detectors.sam_dump import BackboneDump
+from seg.models.detectors import BackboneDump
 from seg.models.necks import LastLayerNeck
 from seg.models.utils import NO_OBJ
 
