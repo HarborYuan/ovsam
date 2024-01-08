@@ -128,3 +128,6 @@ git clone https://huggingface.co/HarborYuan/ovsam_models models
     year={2024}
 }
 ```
+## License <a name="license"></a>
+
+This project is licensed under <a rel="license" href="https://github.com/HarborYuan/ovsam/blob/master/LICENSE">NTU S-Lab License 1.0</a>. Redistribution and use should follow this license.
