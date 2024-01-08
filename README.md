@@ -10,7 +10,7 @@
 [<sup>1</sup>S-Lab, Nanyang Technological University](https://www.mmlab-ntu.com/), 
 [<sup>2</sup>Shanghai Artificial Intelligence Laboratory](https://www.shlab.org.cn/)
 
-[[`Paper`]()] 
+[[`Paper`](http://arxiv.org/abs/2401.02955)] 
 [[`Project Page`](https://www.mmlab-ntu.com/project/ovsam)]
 [[`Hugging Face Demo`](https://huggingface.co/spaces/HarborYuan/ovsam)]
 
@@ -114,7 +114,7 @@ bash tools/dist.sh train seg/configs/clip2sam/clip2sam_coco_rn50x16.py 8
 ```commandline
 bash tools/dist.sh test seg/configs/ovsam/ovsam_coco_rn50x16_point.py 8
 ```
-You can get the models from [🤗huggingface](https://huggingface.co/HarborYuan/ovsam_models) to get the pre-trained weights:
+Please refer to [🤗huggingface](https://huggingface.co/HarborYuan/ovsam_models) to get the pre-trained weights:
 ```commandline
 git clone https://huggingface.co/HarborYuan/ovsam_models models
 ```
