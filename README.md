@@ -21,6 +21,20 @@ We introduce the Open-Vocabulary SAM, a SAM-inspired model designed for simultan
   <img src="https://www.mmlab-ntu.com/project/ovsam/img/ovsam_teaser.jpg" alt="OVSAM overview">
 </p>
 
+## 🔧Usage
+To play with Open-Vocabulary SAM, you can:
+1. Try the online demo on the [🤗HuggingFace Space](https://huggingface.co/spaces/HarborYuan/ovsam). Thanks for the generous support of the HuggingFace team.
+2. Run the gradio demo locally by cloning and running the [repo](https://huggingface.co/spaces/HarborYuan/ovsam/tree/main) on 🤗HuggingFace:
+    ```commandline
+    git clone https://huggingface.co/spaces/HarborYuan/ovsam ovsam_demo
+    cd ovsam_demo
+    conda create -n ovsam_demo python=3.10  && conda activate ovsam_demo
+    python -m pip install gradio==4.7.1
+    python -m pip install -r requirements.txt
+    python main.py
+    ```
+3. Try to train or evaluate in this repo following the instructions below.
+
 ## ⚙️ Installation
 We use conda to manage the environment.
 
