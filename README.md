@@ -23,8 +23,8 @@ We introduce the Open-Vocabulary SAM, a SAM-inspired model designed for simultan
 
 ## 🔧Usage
 To play with Open-Vocabulary SAM, you can:
-1. Try the online demo on the [🤗HuggingFace Space](https://huggingface.co/spaces/HarborYuan/ovsam). Thanks for the generous support of the HuggingFace team.
-2. Run the gradio demo locally by cloning and running the [repo](https://huggingface.co/spaces/HarborYuan/ovsam/tree/main) on 🤗HuggingFace:
+1. Try the online demo on the [🤗Hugging Face Space](https://huggingface.co/spaces/HarborYuan/ovsam). Thanks for the generous support of the Hugging Face team.
+2. Run the gradio demo locally by cloning and running the [repo](https://huggingface.co/spaces/HarborYuan/ovsam/tree/main) on 🤗Hugging Face:
     ```commandline
     git clone https://huggingface.co/spaces/HarborYuan/ovsam ovsam_demo
     cd ovsam_demo
@@ -128,7 +128,7 @@ bash tools/dist.sh train seg/configs/clip2sam/clip2sam_coco_rn50x16.py 8
 ```commandline
 bash tools/dist.sh test seg/configs/ovsam/ovsam_coco_rn50x16_point.py 8
 ```
-Please refer to [🤗huggingface](https://huggingface.co/HarborYuan/ovsam_models) to get the pre-trained weights:
+Please refer to [🤗Hugging Face](https://huggingface.co/HarborYuan/ovsam_models) to get the pre-trained weights:
 ```commandline
 git clone https://huggingface.co/HarborYuan/ovsam_models models
 ```
