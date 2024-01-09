@@ -28,6 +28,7 @@ To play with Open-Vocabulary SAM, you can:
     ```commandline
     git clone https://huggingface.co/spaces/HarborYuan/ovsam ovsam_demo
     cd ovsam_demo
+    git lfs pull
     conda create -n ovsam_demo python=3.10  && conda activate ovsam_demo
     python -m pip install gradio==4.7.1
     python -m pip install -r requirements.txt
