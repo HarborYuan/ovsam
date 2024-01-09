@@ -26,9 +26,9 @@ To play with Open-Vocabulary SAM, you can:
 1. Try the online demo on the [🤗Hugging Face Space](https://huggingface.co/spaces/HarborYuan/ovsam). Thanks for the generous support of the Hugging Face team.
 2. Run the gradio demo locally by cloning and running the [repo](https://huggingface.co/spaces/HarborYuan/ovsam/tree/main) on 🤗Hugging Face:
     ```commandline
+    git lfs install
     git clone https://huggingface.co/spaces/HarborYuan/ovsam ovsam_demo
     cd ovsam_demo
-    git lfs install
     conda create -n ovsam_demo python=3.10  && conda activate ovsam_demo
     python -m pip install gradio==4.7.1
     python -m pip install -r requirements.txt
