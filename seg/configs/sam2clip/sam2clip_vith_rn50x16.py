@@ -52,7 +52,7 @@ model = dict(
     ),
     backbone_student=dict(
         type=OpenCLIPBackbone,
-        model_name='RN50',
+        model_name='RN50x16',
         fix=True,
         init_cfg=dict(
             type='clip_pretrain',
@@ -63,7 +63,7 @@ model = dict(
     neck_student=dict(
         type=MultiLayerTransformerNeck,
         input_size=(1024, 1024),
-        in_channels=[256, 512, 1024, 2048],
+        in_channels=[384, 768, 1536, 3072],
         strides=[4, 8, 16, 32],
         layer_ids=(0, 1, 2, 3),
         embed_channels=1280,
