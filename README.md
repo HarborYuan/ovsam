@@ -10,9 +10,10 @@
 [<sup>1</sup>S-Lab, Nanyang Technological University](https://www.mmlab-ntu.com/), 
 [<sup>2</sup>Shanghai Artificial Intelligence Laboratory](https://www.shlab.org.cn/)
 
-[[`Paper`](http://arxiv.org/abs/2401.02955)] 
-[[`Project Page`](https://www.mmlab-ntu.com/project/ovsam)]
-[[`Hugging Face Demo`](https://huggingface.co/spaces/HarborYuan/ovsam)]
+[![arXiv](https://img.shields.io/badge/arXiv-2401.02955-b31b1b.svg)](https://arxiv.org/abs/2401.02955)
+[![Project Page](https://img.shields.io/badge/OVSAM-Project%20Page-green)](https://www.mmlab-ntu.com/project/ovsam)
+[![HuggingFace Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-App-blue)](https://huggingface.co/spaces/HarborYuan/ovsam)
+[![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/houshaowei/Open-Vocabulary_SAM)
 
 ## 👀 Overview
 We introduce the Open-Vocabulary SAM, a SAM-inspired model designed for simultaneous interactive segmentation and recognition, leveraging two unique knowledge transfer modules: SAM2CLIP and CLIP2SAM. The former adapts SAM's knowledge into the CLIP via distillation and learnable transformer adapters, while the latter transfers CLIP knowledge into SAM, enhancing its recognition capabilities.
