@@ -42,7 +42,7 @@ We use conda to manage the environment.
 
 Pytorch installation:
 ```commandline
-conda install pytorch torchvision torchaudio cuda-toolkit pytorch-cuda==12.1 -c pytorch -c "nvidia/label/cuda-12.1.0"
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 cuda -c pytorch  -c "nvidia/label/cuda-12.1.0" -c "nvidia/label/cuda-12.1.1"
 ```
 
 mmengine installation:
