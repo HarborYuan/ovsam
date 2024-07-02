@@ -15,6 +15,9 @@
 [![HuggingFace Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-App-blue)](https://huggingface.co/spaces/HarborYuan/ovsam)
 [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/houshaowei/Open-Vocabulary_SAM)
 
+## 📰 News
+* **` Jul. 1st, 2024`:** Open-Vocabulary SAM has been accepted by [ECCV 2024](https://eccv2024.ecva.net).
+
 ## 👀 Overview
 We introduce the Open-Vocabulary SAM, a SAM-inspired model designed for simultaneous interactive segmentation and recognition, leveraging two unique knowledge transfer modules: SAM2CLIP and CLIP2SAM. The former adapts SAM's knowledge into the CLIP via distillation and learnable transformer adapters, while the latter transfers CLIP knowledge into SAM, enhancing its recognition capabilities.
 
@@ -137,10 +140,10 @@ git clone https://huggingface.co/HarborYuan/ovsam_models models
 
 ## 📚 Citation
 ```bibtex
-@article{yuan2024ovsam,
+@inproceedings{yuan2024ovsam,
     title={Open-Vocabulary SAM: Segment and Recognize Twenty-thousand Classes Interactively},
     author={Yuan, Haobo and Li, Xiangtai and Zhou, Chong and Li, Yining and Chen, Kai and Loy, Chen Change},
-    journal={ECCV},
+    booktitle={ECCV},
     year={2024}
 }
 ```
