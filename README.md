@@ -1,4 +1,4 @@
-# Open-Vocabulary SAM
+# Open-Vocabulary SAM [ECCV-2024]
 
 [Haobo Yuan<sup>1</sup>](https://yuanhaobo.me), 
 [Xiangtai Li<sup>1</sup>](https://lxtgh.github.io), 
@@ -140,7 +140,7 @@ git clone https://huggingface.co/HarborYuan/ovsam_models models
 @article{yuan2024ovsam,
     title={Open-Vocabulary SAM: Segment and Recognize Twenty-thousand Classes Interactively},
     author={Yuan, Haobo and Li, Xiangtai and Zhou, Chong and Li, Yining and Chen, Kai and Loy, Chen Change},
-    journal={arXiv preprint},
+    journal={ECCV},
     year={2024}
 }
 ```
