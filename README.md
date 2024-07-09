@@ -15,8 +15,26 @@
 [![HuggingFace Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-App-blue)](https://huggingface.co/spaces/HarborYuan/ovsam)
 [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/houshaowei/Open-Vocabulary_SAM)
 
+
+# RWKV-SAM [Arxiv](https://arxiv.org/abs/2406.19369)
+
+[Haobo Yuan<sup>1</sup>](https://yuanhaobo.me), 
+[Xiangtai Li<sup>2,1</sup>](https://lxtgh.github.io), 
+[Tao Zhang<sup>2</sup>](https://zhang-tao-whu.github.io/), 
+[Lu Qi<sup>3</sup>](http://luqi.info/), 
+[Ming-Hsuan Yang<sup>3</sup>](http://faculty.ucmerced.edu/mhyang/), 
+[Shuicheng Yan<sup>2</sup>](https://yanshuicheng.info/), 
+[Chen Change Loy<sup>1</sup>](https://www.mmlab-ntu.com/person/ccloy/).
+
+[<sup>1</sup>S-Lab, Nanyang Technological University](https://www.mmlab-ntu.com/),
+[<sup>2</sup>SkyworkAI]()
+[<sup>3</sup>UC Merced]()
+
+
 ## 📰 News
-* **` Jul. 1st, 2024`:** Open-Vocabulary SAM has been accepted by [ECCV 2024](https://eccv2024.ecva.net).
+* **` Jul. 2, 2024`:** Open-Vocabulary SAM has been accepted by [ECCV 2024](https://eccv2024.ecva.net).
+* **` Jun. 27, 2024`:** Release RWKV-SAM code ande model [Paper](https://arxiv.org/abs/2406.19369).
+
 
 ## 👀 Overview
 We introduce the Open-Vocabulary SAM, a SAM-inspired model designed for simultaneous interactive segmentation and recognition, leveraging two unique knowledge transfer modules: SAM2CLIP and CLIP2SAM. The former adapts SAM's knowledge into the CLIP via distillation and learnable transformer adapters, while the latter transfers CLIP knowledge into SAM, enhancing its recognition capabilities.
@@ -138,14 +156,32 @@ Please refer to [🤗Hugging Face](https://huggingface.co/HarborYuan/ovsam_model
 git clone https://huggingface.co/HarborYuan/ovsam_models models
 ```
 
+## RWKV-SAM
+
+See [readme.md](./projects/rwkvsam/README.md) for the details.
+
+
 ## 📚 Citation
+
+If you think our codebases and works are useful for your research, please consider referring us:
+
+
 ```bibtex
+
 @inproceedings{yuan2024ovsam,
     title={Open-Vocabulary SAM: Segment and Recognize Twenty-thousand Classes Interactively},
     author={Yuan, Haobo and Li, Xiangtai and Zhou, Chong and Li, Yining and Chen, Kai and Loy, Chen Change},
     booktitle={ECCV},
     year={2024}
 }
+
+@article{yuan2024mamba,
+  title={Mamba or RWKV: Exploring High-Quality and High-Efficiency Segment Anything Model},
+  author={Yuan, Haobo and Li, Xiangtai and Qi, Lu and Zhang, Tao and Yang, Ming-Hsuan and Yan, Shuicheng and Loy, Chen Change},
+  journal={arXiv preprint arXiv:2406.19369},
+  year={2024}
+}
+
 ```
 ## License <a name="license"></a>
 
