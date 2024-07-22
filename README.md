@@ -33,7 +33,7 @@
 
 ## 📰 News
 * **` Jul. 2, 2024`:** Open-Vocabulary SAM has been accepted by [ECCV 2024](https://eccv2024.ecva.net).
-* **` Jun. 27, 2024`:** Release RWKV-SAM code ande model [Paper](https://arxiv.org/abs/2406.19369).
+* **` Jun. 27, 2024`:** Release RWKV-SAM code and model [Paper](https://arxiv.org/abs/2406.19369). Please check out the [folder](https://github.com/HarborYuan/ovsam/tree/main/projects/rwkvsam).
 
 
 ## 👀 Overview
