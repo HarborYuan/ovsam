@@ -1,3 +1,5 @@
+import io
+import os
 from typing import Optional, Tuple, Union
 
 import mmcv
@@ -12,6 +14,7 @@ from mmdet.datasets.transforms import LoadAnnotations as MMDET_LoadAnnotations
 from mmdet.structures.bbox import autocast_box_type
 from mmdet.structures.mask import BitmapMasks
 from mmdet.datasets.transforms import LoadPanopticAnnotations
+from mmengine import get_file_backend
 from mmengine.fileio import get
 
 from seg.models.utils import NO_OBJ
@@ -350,14 +353,25 @@ class GTNMS(BaseTransform):
 @TRANSFORMS.register_module()
 class LoadFeatFromFile(BaseTransform):
 
-    def __init__(self, model_name='vit_h'):
+    def __init__(self, model_name='vit_h', data_dir='data/sam_feat', force_load=True):
+        self.data_dir = data_dir
         self.cache_suffix = f'_{model_name}_cache.pth'
+        self.force_load = force_load
 
     def transform(self, results: dict) -> Optional[dict]:
-        img_path = results['img_path']
+        img_path = os.path.basename(results['img_path'])
         feat_path = img_path.replace('.jpg', self.cache_suffix)
-        assert mmengine.exists(feat_path)
-        feat = torch.load(feat_path)
+        feat_path = os.path.join(self.data_dir, feat_path)
+        if self.force_load:
+            assert mmengine.exists(feat_path)
+        else:
+            if 's3://' in feat_path or not mmengine.exists(feat_path):
+                results['feat'] = None
+                return results
+
+        file_backend = get_file_backend(feat_path, backend_args=None)
+        with io.BytesIO(file_backend.get(feat_path)) as buffer:
+            feat = torch.load(buffer, map_location='cpu')
         results['feat'] = feat
         return results
 

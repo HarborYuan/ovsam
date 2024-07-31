@@ -167,7 +167,6 @@ If you think our codebases and works are useful for your research, please consid
 
 
 ```bibtex
-
 @inproceedings{yuan2024ovsam,
     title={Open-Vocabulary SAM: Segment and Recognize Twenty-thousand Classes Interactively},
     author={Yuan, Haobo and Li, Xiangtai and Zhou, Chong and Li, Yining and Chen, Kai and Loy, Chen Change},
@@ -178,10 +177,9 @@ If you think our codebases and works are useful for your research, please consid
 @article{yuan2024mamba,
   title={Mamba or RWKV: Exploring High-Quality and High-Efficiency Segment Anything Model},
   author={Yuan, Haobo and Li, Xiangtai and Qi, Lu and Zhang, Tao and Yang, Ming-Hsuan and Yan, Shuicheng and Loy, Chen Change},
-  journal={arXiv preprint arXiv:2406.19369},
+  journal={arXiv preprint},
   year={2024}
 }
-
 ```
 ## License <a name="license"></a>
 

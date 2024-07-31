@@ -1,12 +1,16 @@
 # RWKV-SAM
 
 [Haobo Yuan<sup>1</sup>](https://yuanhaobo.me), 
-[Xiangtai Li<sup>1</sup>](https://lxtgh.github.io),
-[Lu Qi<sup>1</sup>](http://luqi.info),
-[Tao Zhang<sup>1</sup>](https://scholar.google.com.hk/citations?user=3xu4a5oAAAAJ&hl=zh-CN),
-[Ming-Hsuan Yang<sup>2</sup>](http://faculty.ucmerced.edu/mhyang/), 
+[Xiangtai Li<sup>1,2</sup>](https://lxtgh.github.io),
+[Lu Qi<sup>3</sup>](http://luqi.info),
+[Tao Zhang<sup>2</sup>](https://scholar.google.com.hk/citations?user=3xu4a5oAAAAJ&hl=zh-CN),
+[Ming-Hsuan Yang<sup>3</sup>](http://faculty.ucmerced.edu/mhyang/), 
 [Shuicheng Yan<sup>2</sup>](https://yanshuicheng.info), 
 [Chen Change Loy<sup>1</sup>](https://www.mmlab-ntu.com/person/ccloy/). 
+
+[<sup>1</sup>S-Lab, Nanyang Technological University](https://www.mmlab-ntu.com/), 
+[<sup>2</sup>Skywork AI](),
+[<sup>3</sup>UC Merced](https://www.ucmerced.edu)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2406.19369-b31b1b.svg)](https://arxiv.org/abs/2406.19369)
 
