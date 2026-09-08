@@ -16,6 +16,13 @@
 [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/houshaowei/Open-Vocabulary_SAM)
 
 
+## 📊 Statistics
+
+<a href="https://github.com/HarborYuan/ovsam">
+  <img src="https://repo-card.harboryuan.workers.dev/HarborYuan/ovsam.svg" alt="Open-Vocabulary SAM repo card" width="560">
+</a>
+
+
 # RWKV-SAM [Arxiv](https://arxiv.org/abs/2406.19369)
 
 [Haobo Yuan<sup>1</sup>](https://yuanhaobo.me), 
